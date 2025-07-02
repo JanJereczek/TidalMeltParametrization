@@ -1,4 +1,4 @@
-
+normal_cdf(x, mu, sigma) = 0.5 .* (1 .+ erf.((x .- mu) ./ (sigma * sqrt(2))))
 sigmoid(x, a) = 1 / (1 + exp(a*x))
 natan(x, a) = (atan(a * x) + pi / 2) / pi
 # poly = fit(pdf.x, norm_cdf, 6)
